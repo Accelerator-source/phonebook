@@ -1,5 +1,6 @@
 <template>
     <div>电话簿哈哈哈哈</div>
+
 </template>
 
 <script>
@@ -8,7 +9,7 @@
 
     export default {
         name: "PhoneBook",
-      methods:{
+        methods:{
           getPhoneBook(){
             let url = getServerUrl("phoneBook/loadAll");
             axios.get(url)
@@ -18,11 +19,11 @@
               console.log(error)
             })
 
-          },
-          mounted(){
-            this.getPhoneBook();//加载所有电话信息
           }
-      }
+        },
+        mounted() {
+          this.getPhoneBook();
+        }
     }
 </script>
 
