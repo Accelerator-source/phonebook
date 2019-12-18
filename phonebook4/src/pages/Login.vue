@@ -46,7 +46,6 @@
             axios.post(url,{'userName':this.userName,'password':this.password})
               .then(response=>{
                 if (response.data.code == 0){
-                  console.log("没问题啊");
                   window.localStorage.setItem('token',response.data.token);
                   this.$router.replace('/phoneBook');
                 }else{
