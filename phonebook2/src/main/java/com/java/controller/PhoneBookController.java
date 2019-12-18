@@ -14,6 +14,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/phoneBook")
 public class PhoneBookController {
 
+    /**
+     *
+     * @author Wangxw
+     * @param
+     * @date 2019-12-18 19:44
+     * @return R
+     */
     @RequestMapping("/loadAll")
     public R loadAll(){
         return R.ok("电话簿列表");
